@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Primary_color: #FC6736;
+    --Secondary_color : #0C2D57;
+    --Opsional_color : #EFECEC;
+}
+
+body {
+    height: 100dvh;
+    font-family: poppins;
+}
+
+.head_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15.5rem;
+    background-image: url(books.jpg);
+    background-size: cover;
+}
+
+.head_bar__title {
+    font-size: 40px;
+    color: var(--Primary_color);
+}
+
+/* ini */
+.container {
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+
+}
+
+.container_left {
+    width: 100%
+}
+
+.container_right {
+    width: 100%;
+}
+
+.input_section {
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--Opsional_color);
+}
+
+.input_section__title {
+    text-align: center;
+    font-size: 25px;
+    color: var(--Secondary_color);
+}
+
+#inputBookTitle, #inputBookAuthor, #inputBookYear {
+    width: 100%;
+    border: none;
+    padding: 5px 8px;
+}
+
+#inputBookTitle, #inputBookAuthor, #inputBookYear:focus {
+    outline: none;
+}
+
+#bookSubmit {
+    margin-top: 20px;
+    width: auto;
+    color: var(--Opsional_color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--Secondary_color);
+}
+
+.search_section {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--Opsional_color);
+}
+
+.search_section__title {
+    text-align: center;
+    font-size: 25px;
+    color: var(--Secondary_color);
+}
+
+#searchBook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchBookTitle {
+    width: 100% ;
+    border: none;
+    padding: 8px 8px;
+}
+
+#searchSubmit {
+    padding: 8px 20px;
+    border: none;
+    background-color: var(--Secondary_color);
+    color: var(--Opsional_color);
+}
+
+.book_shelf__Container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    border-radius: 20px;
+    height: auto;
+}
+
+.book_shelf__title {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--Opsional_color);
+    color: var(--Secondary_color);
+}
+
+.book_shelf__Belum, .book_shelf__Selesai {
+    overflow-y: scroll;
+    width: 100%;
+    background-color: var(--Opsional_color);
+    border-radius: 20px;
+    height: 230px;
+}
+
+footer {
+    text-transform: capitalize;
+    padding: 20px 0;
+    background-color: var(--Secondary_color);
+    text-align: center;
+    color: var(--Primary_color)
+}
+
+
+/* Responsive Design */
+@media screen and (min-width : 1024px) {
+    .head_bar__title{
+        font-size: 40px;
+    }
+    .container {
+        height: 70dvh;
+        margin: 20px 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    .container_left {
+        width: 30%;
+        height: 70dvh;
+    }
+    .container_right{
+        width: 60%;
+    }
+    .input_section__title {
+        font-size: 30px;
+    }
+    .search_section__title{
+        font-size: 30px;
+    }
+    .book_shelf__Container {
+        display: flex;
+        flex-direction: row;
+    }
+    .book_shelf__Belum, .book_shelf__Selesai{
+        width: 50%;
+        height: 50dvh;
+    }
+
+    .head_bar {
+        height: 40dvh;
+    }
+}
+
+
+
+
+
+
